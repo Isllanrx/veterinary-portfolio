@@ -88,7 +88,7 @@ export function Navbar() {
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-9 w-9">
+                <Button variant="ghost" size="icon" className="h-9 w-9" aria-label={t.navbar.language}>
                   <Languages className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -110,7 +110,7 @@ export function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-9 w-9">
+                <Button variant="ghost" size="icon" className="h-9 w-9" aria-label={t.navbar.language}>
                   <Languages className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -126,6 +126,7 @@ export function Navbar() {
               size="icon"
               className="h-9 w-9"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? t.navbar.closeMenu : t.navbar.openMenu}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>

@@ -7,6 +7,9 @@ export const translations = {
       skills: "Habilidades",
       education: "Formação",
       contact: "Contato",
+      language: "Alterar idioma",
+      openMenu: "Abrir menu",
+      closeMenu: "Fechar menu",
     },
     hero: {
       tagline: "Medicina Veterinária",
@@ -153,6 +156,9 @@ export const translations = {
       skills: "Skills",
       education: "Education",
       contact: "Contact",
+      language: "Change language",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
     },
     hero: {
       tagline: "Veterinary Medicine",
@@ -299,6 +305,9 @@ export const translations = {
       skills: "Habilidades",
       education: "Formación",
       contact: "Contacto",
+      language: "Cambiar idioma",
+      openMenu: "Abrir menú",
+      closeMenu: "Cerrar menú",
     },
     hero: {
       tagline: "Medicina Veterinaria",

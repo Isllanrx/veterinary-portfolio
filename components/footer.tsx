@@ -70,6 +70,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="p-1.5 rounded-md hover:bg-primary/10 hover:text-primary transition-all"
                 title="LinkedIn Isllan Toso"
+                aria-label="LinkedIn Isllan Toso"
               >
                 <Linkedin className="h-3.5 w-3.5" />
               </a>
