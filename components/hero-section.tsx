@@ -27,7 +27,7 @@ export function HeroSection() {
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-accent/30 rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-700"></div>
             <div className="relative w-48 h-64 sm:w-56 sm:h-72 md:w-64 md:h-80 rounded-[2.5rem] overflow-hidden border-2 border-border shadow-2xl bg-muted">
               <Image
-                src="/perfil.png"
+                src="/perfil/perfil.webp"
                 alt="Vitor Casagrande"
                 fill
                 sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, 256px"
@@ -65,7 +65,7 @@ export function HeroSection() {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-64 h-14 text-base font-bold rounded-2xl border-2">
-              <a href="/curriculo_vitor.pdf" download="Vitor_Casagrande_CV.pdf">
+              <a href="/docs/curriculo_vitor.pdf" download="Vitor_Casagrande_CV.pdf">
                 <Download className="mr-2 h-5 w-5" />
                 {t.hero.download}
               </a>
