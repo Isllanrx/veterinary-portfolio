@@ -1,4 +1,4 @@
-````markdown
+
 # Professional Portfolio — Vitor Casagrande
 
 This is the professional portfolio of **Vitor Casagrande**, a senior Veterinary Medicine student focused on public health, sanitary inspection, and animal welfare. The project was built using modern web technologies to ensure high performance, SEO optimization, and international accessibility.
@@ -38,7 +38,6 @@ To run this project locally:
    npm install
    # or
    pnpm install
-````
 
 2. **Start development server:**
 
