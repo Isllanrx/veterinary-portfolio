@@ -1,0 +1,16 @@
+{
+  "name": "Vitor Casagrande Andrade | Medicina Veterinária",
+  "short_name": "VCA Vet",
+  "description": "Portfólio profissional de Vitor Casagrande Andrade",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

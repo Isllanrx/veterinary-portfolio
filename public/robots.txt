@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vitor-casagrande.vercel.app/sitemap.xml
