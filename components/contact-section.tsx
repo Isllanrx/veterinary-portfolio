@@ -24,7 +24,7 @@ export function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    const template = `*${t.contact.title}*
+    const template = `*Contato via portfolio*
 
 *${t.contact.form.nameLabel}:* ${formData.name}
 *${t.contact.form.emailLabel}:* ${formData.email}
