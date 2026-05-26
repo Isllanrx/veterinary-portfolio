@@ -30,6 +30,7 @@ export function HeroSection() {
                 src="/perfil.png"
                 alt="Vitor Casagrande"
                 fill
+                sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, 256px"
                 className="object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-700"
                 priority
               />
