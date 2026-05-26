@@ -100,7 +100,7 @@ export function Navbar() {
                   Inglês
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setLanguage("es")} className={language === "es" ? "bg-accent" : ""}>
-                  Espanol
+                  Espanhol
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
