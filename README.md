@@ -55,9 +55,4 @@ To run this project locally:
 
 This project is intended for personal use as the portfolio of Vitor Casagrande.
 
----
-
 Developed by **[Isllan Toso](https://www.linkedin.com/in/isllantoso/)**
-
-```
-```
