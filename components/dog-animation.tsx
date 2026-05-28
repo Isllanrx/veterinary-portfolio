@@ -6,9 +6,9 @@ import dogRightToLeft from "@/public/perfil/dog.json"
 
 export function DogAnimation() {
   return (
-    <div className="fixed bottom-0 left-0 w-full h-24 pointer-events-none z-50 select-none overflow-hidden">
-      {/* Cachorro da Esquerda para Direita (dog_2) */}
-      <div className="absolute bottom-0 animate-run-right w-24 h-24 md:w-32 md:h-32 opacity-80">
+    <div className="fixed bottom-0 left-0 w-full h-32 pointer-events-none z-50 select-none overflow-hidden">
+      {/* Cachorro da Esquerda para Direita (dog_2) - Ajustado para não cortar */}
+      <div className="absolute bottom-2 animate-run-right w-20 h-20 md:w-28 md:h-28 opacity-80">
         <Lottie 
           animationData={dogLeftToRight} 
           loop={true} 
