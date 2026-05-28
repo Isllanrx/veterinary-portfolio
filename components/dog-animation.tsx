@@ -26,25 +26,45 @@ export function DogAnimation() {
       </div>
 
       <style jsx global>{`
-        @keyframes runRight {
-          0% { left: -150px; transform: translateY(0) scale(0.95); }
-          30% { transform: translateY(-5px) scale(0.95); }
-          50% { transform: translateY(-20px) scale(0.9); } /* Desvia para cima (fundo) */
-          70% { transform: translateY(-5px) scale(0.95); }
-          100% { left: 100%; transform: translateY(0) scale(0.95); }
+        @keyframes runRoundTripRight {
+          /* Ida: Esquerda para Direita */
+          0% { left: -120px; transform: scaleX(1) translateY(0) scale(0.9); }
+          22% { left: 50%; transform: scaleX(1) translateY(-20px) scale(0.85); }
+          49% { left: calc(100% + 20px); transform: scaleX(1) translateY(0) scale(0.9); }
+          
+          /* Giro Rápido na Direita */
+          50% { left: calc(100% + 20px); transform: scaleX(-1) translateY(0) scale(0.9); }
+          
+          /* Volta: Direita para Esquerda */
+          72% { left: 50%; transform: scaleX(-1) translateY(-20px) scale(0.85); }
+          99% { left: -120px; transform: scaleX(-1) translateY(0) scale(0.9); }
+          
+          /* Giro Rápido na Esquerda */
+          100% { left: -120px; transform: scaleX(1) translateY(0) scale(0.9); }
         }
-        @keyframes runLeft {
-          0% { right: -150px; transform: scaleX(-1) translateY(0) scale(1); }
-          30% { transform: scaleX(-1) translateY(5px) scale(1); }
-          50% { transform: scaleX(-1) translateY(15px) scale(1.05); } /* Desvia para baixo (frente) */
-          70% { transform: scaleX(-1) translateY(5px) scale(1); }
-          100% { right: 100%; transform: scaleX(-1) translateY(0) scale(1); }
+
+        @keyframes runRoundTripLeft {
+          /* Ida: Direita para Esquerda */
+          0% { right: -120px; transform: scaleX(-1) translateY(0) scale(1); }
+          22% { right: 50%; transform: scaleX(-1) translateY(15px) scale(1.05); }
+          49% { right: calc(100% + 20px); transform: scaleX(-1) translateY(0) scale(1); }
+          
+          /* Giro Rápido na Esquerda */
+          50% { right: calc(100% + 20px); transform: scaleX(1) translateY(0) scale(1); }
+          
+          /* Volta: Esquerda para Direita */
+          72% { right: 50%; transform: scaleX(1) translateY(15px) scale(1.05); }
+          99% { right: -120px; transform: scaleX(1) translateY(0) scale(1); }
+          
+          /* Giro Rápido na Direita */
+          100% { right: -120px; transform: scaleX(-1) translateY(0) scale(1); }
         }
+
         .animate-run-right {
-          animation: runRight 14s linear infinite;
+          animation: runRoundTripRight 22s linear infinite;
         }
         .animate-run-left {
-          animation: runLeft 17s linear infinite;
+          animation: runRoundTripLeft 26s linear infinite;
         }
       `}</style>
     </div>
