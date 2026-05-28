@@ -1,19 +1,22 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react"
+import { Mail, Phone, MapPin, MessageCircle, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { useToast } from "@/hooks/use-toast"
 
 import { useLanguage } from "@/components/language-provider"
 
 const WHATSAPP_NUMBER = "5527996176406"
+const MAX_CHARS = 400
 
 export function ContactSection() {
   const { t } = useLanguage()
+  const { toast } = useToast()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,6 +27,15 @@ export function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
+    if (formData.message.length > MAX_CHARS) {
+      toast({
+        title: t.contact.form.validation.limitExceeded,
+        description: t.contact.form.validation.limitMessage,
+        variant: "destructive",
+      })
+      return
+    }
+
     const template = `*Contato via portfolio*
 
 *${t.contact.form.nameLabel}:* ${formData.name}
@@ -64,6 +76,7 @@ ${formData.message}`
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
+                    maxLength={100}
                     className="bg-muted/30 border-border/50 focus:bg-background focus:ring-2 focus:ring-primary/20 h-11 sm:h-12 rounded-lg text-sm sm:text-base"
                   />
                 </div>
@@ -76,6 +89,7 @@ ${formData.message}`
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
+                    maxLength={100}
                     className="bg-muted/30 border-border/50 focus:bg-background focus:ring-2 focus:ring-primary/20 h-11 sm:h-12 rounded-lg text-sm sm:text-base"
                   />
                 </div>
@@ -89,12 +103,20 @@ ${formData.message}`
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   required
+                  maxLength={100}
                   className="bg-muted/30 border-border/50 focus:bg-background focus:ring-2 focus:ring-primary/20 h-11 sm:h-12 rounded-lg text-sm sm:text-base"
                 />
               </div>
               
               <div className="space-y-1.5 sm:space-y-2">
-                <Label htmlFor="message" className="text-xs sm:text-sm font-bold ml-1">{t.contact.form.messageLabel}</Label>
+                <div className="flex justify-between items-center">
+                  <Label htmlFor="message" className="text-xs sm:text-sm font-bold ml-1">{t.contact.form.messageLabel}</Label>
+                  <span className={`text-[10px] sm:text-xs font-medium ${
+                    formData.message.length > MAX_CHARS * 0.9 ? "text-destructive" : "text-muted-foreground"
+                  }`}>
+                    {formData.message.length}/{MAX_CHARS}
+                  </span>
+                </div>
                 <Textarea
                   id="message"
                   placeholder={t.contact.form.messagePlaceholder}
@@ -102,8 +124,15 @@ ${formData.message}`
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
+                  maxLength={MAX_CHARS}
                   className="bg-muted/30 border-border/50 focus:bg-background focus:ring-2 focus:ring-primary/20 rounded-lg p-3 sm:p-4 min-h-[120px] sm:min-h-[150px] resize-none text-sm sm:text-base"
                 />
+                {formData.message.length >= MAX_CHARS && (
+                  <p className="text-[10px] text-destructive flex items-center mt-1 ml-1 animate-in fade-in slide-in-from-top-1">
+                    <AlertCircle className="h-3 w-3 mr-1" />
+                    {t.contact.form.validation.maxReached}
+                  </p>
+                )}
               </div>
               
               <div className="pt-2">
