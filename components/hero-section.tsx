@@ -65,7 +65,7 @@ export function HeroSection() {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-64 h-14 text-base font-bold rounded-2xl border-2">
-              <a href="/docs/curriculo_vitor.pdf" download="Vitor_Casagrande_CV.pdf">
+              <a href="https://drive.google.com/uc?export=download&id=1qZWeyK-_apgNdWnjchn2RrxGy4XB9Xdi" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 {t.hero.download}
               </a>
