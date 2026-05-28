@@ -33,7 +33,7 @@ export const translations = {
           responsibilities: [
             "Resgate e recolhimento de animais em situação de vulnerabilidade e maus-tratos nas vias públicas.",
             "Triagem e avaliação clínica inicial dos animais resgatados com encaminhamento para atendimento.",
-            "Cadastramento de tutores e animais para programas municipais de castração gratuita.",
+            "Manejo e resgate de animais silvestres e domésticos em situação de risco.",
             "Orientação à população sobre posse responsável, guarda consciente e legislação de proteção.",
             "Apoio na logística de campanhas de castração e organização documental dos atendimentos.",
           ],
@@ -114,16 +114,61 @@ export const translations = {
       course: "Bacharelado em Medicina Veterinária",
       institution: "UVV - Vila Velha/ES",
       period: "Jul/2022 – Jul/2027 (Previsão)",
-      studyAxes: "Eixos de Estudo",
-      axes: ["Clínica", "Inspeção", "S. Pública", "Parasito"],
       certificationsTitle: "Certificações",
+      certificationCategories: {
+        congress: "Congressos",
+        courses: "Cursos e Treinamentos"
+      },
       certifications: [
-        { title: "CONASIM 2025", subtitle: "Insp. Municipal (23h)", date: "2025" },
-        { title: "Contra a HIPE", subtitle: "Cardiologia (8h)", date: "2024" },
-        { title: "The Horse Course", subtitle: "Univ. of Florida", date: "2023" },
-        { title: "Auxiliar Vet", subtitle: "Grande Porte (18h)", date: "2023" },
-        { title: "Manejo Pre-Abate", subtitle: "Agroindustrial (9h)", date: "2023" },
-        { title: "Farmacologia", subtitle: "Básica (51.5h)", date: "2023" },
+        { 
+          title: "CONASIM 2025", 
+          subtitle: "Insp. Municipal (23h)", 
+          date: "2025",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1mtdDKPn2H-bI9FEPigcrDdsEuy2JGJFs/view?usp=sharing"
+        },
+        { 
+          title: "Congresso de Cardiologia - HIPE", 
+          subtitle: "Cardiologia (8h)", 
+          date: "2024",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1poP-hf877iEv5xlli4FwlZMaRHxqS9Ss/view?usp=sharing"
+        },
+        { 
+          title: "The Horse Course", 
+          subtitle: "Univ. of Florida", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1WWmf3bFhSX_YpGN2--mddkiufbxpcJkv/view?usp=sharing"
+        },
+        { 
+          title: "Auxiliar Veterinário", 
+          subtitle: "Grande Porte (18h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/17QZpU0oQrWQnyI4_SS99NEIgBTysrGWA/view?usp=sharing"
+        },
+        { 
+          title: "Manejo Pre-Abate", 
+          subtitle: "Agroindustrial (9h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ef2AKHtjfmJNK4QGoYriNvIqsdE_67MC/view?usp=sharing"
+        },
+        { 
+          title: "Farmacologia", 
+          subtitle: "Básica (51.5h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1RfOInvu59beaN6BGcB9f_YSjGFgn5kNR/view?usp=sharing"
+        },
+        { 
+          title: "Pacote Office", 
+          subtitle: "Produtividade", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ZAKNcbLe5pKQ_rqNuzoohaX5OYCcW94l/view?usp=sharing"
+        },
       ],
       languagesTitle: "Idiomas",
       languages: [
@@ -156,123 +201,168 @@ export const translations = {
       skills: "Skills",
       education: "Education",
       contact: "Contact",
-      language: "Change language",
-      openMenu: "Open menu",
-      closeMenu: "Close menu",
+      language: "Change Language",
+      openMenu: "Open Menu",
+      closeMenu: "Close Menu",
     },
     hero: {
       tagline: "Veterinary Medicine",
       motto: '"Caring is our commitment"',
-      status: "In Training",
-      description: "Focused on **public health**, **sanitary inspection**, and **animal welfare**. Consolidated experience in clinical support and laboratory analysis, oriented towards technical quality and biosafety.",
+      status: "Veterinary Student",
+      description: "Focusing on **public health**, **sanitary inspection**, and **animal welfare**. Proven experience in clinical support and laboratory analysis, committed to technical excellence and biosafety.",
       whatsapp: "Contact via WhatsApp",
-      download: "Download CV",
+      download: "Download Resume",
     },
     experience: {
-      title: "Professional Trajectory",
-      accumulated: "Accumulated",
+      title: "Professional Experience",
+      accumulated: "Total",
       supervision: "Supervision",
       items: [
         {
-          title: "Paid Intern — Animal Welfare",
-          organization: "City Hall of Vila Velha",
-          period: "Jan/2024 – Feb/2025",
+          title: "Intern — Animal Welfare",
+          organization: "Vila Velha City Hall",
+          period: "Jan 2024 – Feb 2025",
           supervisor: "Celso Christo",
           hours: "1,500 hours",
           responsibilities: [
-            "Rescue and collection of animals in situations of vulnerability and maltreatment in public areas.",
-            "Initial clinical triage and evaluation of rescued animals with referral for veterinary care.",
-            "Registration of owners and animals for municipal free castration programs.",
-            "Guidance to the population on responsible ownership, conscious guardianship, and protection laws.",
-            "Support in the logistics of castration campaigns and documentary organization of services.",
+            "Rescued and recovered animals in vulnerable or abusive situations within public areas.",
+            "Performed initial clinical triage and evaluation of rescued animals for veterinary referral.",
+            "Managed and assisted in the rescue of both wildlife and domestic animals in high-risk scenarios.",
+            "Provided public guidance on responsible ownership, ethical guardianship, and animal protection laws.",
+            "Supported logistics for sterilization campaigns and maintained organized clinical records.",
           ],
         },
         {
-          title: "Volunteer Intern — Clinical Laboratory",
+          title: "Intern — Clinical Pathology Laboratory",
           organization: "Vila Velha University (UVV)",
-          period: "Mar/2025 – Jun/2025",
+          period: "Mar 2025 – Jun 2025",
           supervisor: "Prof. Paulo Henrique Puphal Kuster",
           hours: "97 hours",
           responsibilities: [
-            "Support for practical classes in the Veterinary Clinical Laboratory discipline.",
-            "Assistance in the preparation and execution of hematological, biochemical, and urinary analyses.",
-            "Preparation of slides for microscopic analysis and diagnostic interpretation.",
-            "Collection and preparation of biological samples for routine laboratory tests.",
-            "Maintenance of laboratory biosafety and hygiene following technical standards.",
+            "Supported practical classes for the Veterinary Clinical Pathology discipline.",
+            "Assisted in performing and analyzing hematological, biochemical, and urinalysis tests.",
+            "Prepared slides for microscopic analysis and diagnostic interpretation.",
+            "Collected and processed biological samples for routine laboratory screenings.",
+            "Ensured strict adherence to biosafety protocols and laboratory hygiene standards.",
           ],
         },
         {
-          title: "Volunteer Intern — Veterinary Anesthesiology",
+          title: "Intern — Veterinary Anesthesiology",
           organization: "Vila Velha University (UVV)",
-          period: "Jan/2023 – Jul/2023",
+          period: "Jan 2023 – Jul 2023",
           hours: "60 hours",
           responsibilities: [
-            "Assistance in the preparation and monitoring of anesthesia in elective and emergency surgeries.",
-            "Verification and organization of anesthetic equipment (circuits, vaporizers, and multiparameter monitors).",
-            "Support in the pre-anesthetic evaluation of patients and definition of the risk score (ASA).",
-            "Assistance in the administration and control of MPA and anesthetic induction protocols.",
-            "Monitoring of vital parameters: HR, RR, SpO₂, temperature, and blood pressure.",
+            "Assisted in anesthetic preparation and monitoring for elective and emergency surgical procedures.",
+            "Verified and organized anesthetic circuits, vaporizers, and multiparameter monitors.",
+            "Contributed to pre-anesthetic patient evaluations and ASA physical status classification.",
+            "Assisted in the administration and management of pre-medication (MPA) and induction protocols.",
+            "Monitored vital parameters, including HR, RR, SpO₂, temperature, and blood pressure.",
           ],
         },
       ],
     },
     skills: {
-      title: "Skills",
+      title: "Professional Skills",
       categories: [
         {
           title: "Clinical & Anesthesia",
           skills: [
             "Small and large animal clinical practice",
-            "Pre-anesthetic evaluation and ASA score",
+            "Pre-anesthetic assessment and ASA scoring",
             "Multiparameter monitoring (HR, RR, SpO2, BP)",
-            "MPA and anesthetic induction protocols",
+            "Pre-medication and induction protocols",
           ],
         },
         {
           title: "Lab & Diagnostics",
           skills: [
-            "Hematology (Wright/Giemsa and morphology)",
-            "Biochemistry (automated analyzers)",
-            "Urinalysis and Parasitology (sediments and feces)",
-            "Slide preparation and interpretation",
+            "Hematology (Wright/Giemsa staining and morphology)",
+            "Biochemistry (automated analyzer systems)",
+            "Urinalysis and Parasitology (sediment and fecal exams)",
+            "Slide preparation and diagnostic microscopy",
           ],
         },
         {
           title: "Public Health & Inspection",
           skills: [
-            "Inspection of meat, milk, eggs, and derivatives",
-            "SUASA, SISBI-POA, and sanitary surveillance",
-            "MAPA, ANVISA, and Codex Alimentarius standards",
-            "Animal welfare and population control",
+            "Inspection of meat, dairy, eggs, and derivatives",
+            "Sanitary surveillance and regulatory compliance (SUASA, SISBI-POA)",
+            "International and domestic standards (MAPA, ANVISA, Codex Alimentarius)",
+            "Animal welfare and population control management",
           ],
         },
         {
-          title: "Tech & Tools",
+          title: "Technology & Tools",
           skills: [
-            "Electronic veterinary record systems",
-            "Office Package (Advanced Excel for controls)",
-            "Scientific bases (SciELO, PubMed, CAPES Portal)",
-            "Anesthetic and surgical equipment",
+            "Electronic Medical Record (EMR) systems",
+            "Microsoft Office Suite (Advanced Excel for data management)",
+            "Scientific research (SciELO, PubMed, CAPES)",
+            "Specialized anesthetic and surgical equipment",
           ],
         },
       ],
     },
     education: {
       title: "Academic Background",
-      graduation: "Graduation",
-      course: "Bachelor of Veterinary Medicine",
+      graduation: "Education",
+      course: "B.S. in Veterinary Medicine",
       institution: "UVV - Vila Velha/ES",
-      period: "Jul/2022 – Jul/2027 (Expected)",
-      studyAxes: "Study Axes",
-      axes: ["Clinical", "Inspection", "Public Health", "Parasito"],
+      period: "Jul 2022 – Jul 2027 (Expected Completion)",
       certificationsTitle: "Certifications",
+      certificationCategories: {
+        congress: "Congresses",
+        courses: "Courses & Training"
+      },
       certifications: [
-        { title: "CONASIM 2025", subtitle: "Municipal Insp. (23h)", date: "2025" },
-        { title: "Against HIPE", subtitle: "Cardiology (8h)", date: "2024" },
-        { title: "The Horse Course", subtitle: "Univ. of Florida", date: "2023" },
-        { title: "Vet Assistant", subtitle: "Large Animals (18h)", date: "2023" },
-        { title: "Pre-Slaughter Mgmt", subtitle: "Agroindustrial (9h)", date: "2023" },
-        { title: "Basic Pharmacology", subtitle: "(51.5h)", date: "2023" },
+        { 
+          title: "CONASIM 2025", 
+          subtitle: "Municipal Inspection (23h)", 
+          date: "2025",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1mtdDKPn2H-bI9FEPigcrDdsEuy2JGJFs/view?usp=sharing"
+        },
+        { 
+          title: "HIPE Cardiology Congress", 
+          subtitle: "Cardiology (8h)", 
+          date: "2024",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1poP-hf877iEv5xlli4FwlZMaRHxqS9Ss/view?usp=sharing"
+        },
+        { 
+          title: "The Horse Course", 
+          subtitle: "University of Florida", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1WWmf3bFhSX_YpGN2--mddkiufbxpcJkv/view?usp=sharing"
+        },
+        { 
+          title: "Veterinary Assistant", 
+          subtitle: "Large Animals (18h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/17QZpU0oQrWQnyI4_SS99NEIgBTysrGWA/view?usp=sharing"
+        },
+        { 
+          title: "Pre-Slaughter Management", 
+          subtitle: "Agro-industrial (9h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ef2AKHtjfmJNK4QGoYriNvIqsdE_67MC/view?usp=sharing"
+        },
+        { 
+          title: "Basic Pharmacology", 
+          subtitle: "Training (51.5h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1RfOInvu59beaN6BGcB9f_YSjGFgn5kNR/view?usp=sharing"
+        },
+        { 
+          title: "Office Suite", 
+          subtitle: "Productivity", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ZAKNcbLe5pKQ_rqNuzoohaX5OYCcW94l/view?usp=sharing"
+        },
       ],
       languagesTitle: "Languages",
       languages: [
@@ -280,7 +370,7 @@ export const translations = {
         { language: "English", level: "Intermediate", progress: 65 },
         { language: "Spanish", level: "Intermediate", progress: 55 },
       ],
-      languageNote: "*Focus on technical reading of scientific articles and international courses.",
+      languageNote: "*Focus on technical literature review and international coursework.",
     },
     contact: {
       title: "Get in Touch",
@@ -288,7 +378,7 @@ export const translations = {
       form: {
         nameLabel: "Full Name",
         namePlaceholder: "Your name",
-        emailLabel: "Email",
+        emailLabel: "Email Address",
         emailPlaceholder: "your@email.com",
         subjectLabel: "Subject",
         subjectPlaceholder: "How can I help?",
@@ -319,7 +409,7 @@ export const translations = {
     },
     experience: {
       title: "Trayectoria Profesional",
-      accumulated: "Acumuladas",
+      accumulated: "Total",
       supervision: "Supervisión",
       items: [
         {
@@ -329,11 +419,11 @@ export const translations = {
           supervisor: "Celso Christo",
           hours: "1.500 horas",
           responsibilities: [
-            "Rescate y recolección de animales en situación de vulnerabilidad y maltrato en vías públicas.",
+            "Rescate y recolección de animales en situación de vulnerabilidad e maltrato en vías públicas.",
             "Triaje y evaluación clínica inicial de los animales rescatados con derivación para atención.",
-            "Registro de tutores y animales para programas municipales de castración gratuita.",
+            "Manejo y rescate de animales silvestres y domésticos en situación de riesgo.",
             "Orientación a la población sobre tenencia responsable, tutela consciente y leyes de protección.",
-            "Apoyo en la logística de campañas de castración e organización documental de los servicios.",
+            "Apoyo en la logística de campañas de castración y organización documental de los servicios.",
           ],
         },
         {
@@ -351,15 +441,15 @@ export const translations = {
           ],
         },
         {
-          title: "Pasante Voluntario — Anestesiologia Veterinaria",
+          title: "Pasante Voluntario — Anestesiología Veterinaria",
           organization: "Universidad de Vila Velha (UVV)",
           period: "Ene/2023 – Jul/2023",
           hours: "60 horas",
           responsibilities: [
-            "Ayuda en el preparado y monitoreo anestésico en cirugías electivas y de urgencia.",
-            "Verificación y organización de circuitos, vaporizadores y monitores multiparamétricos.",
+            "Ayuda en el preparado e monitoreo anestésico en cirugías electivas y de urgencia.",
+            "Verificación e organización de circuitos, vaporizadores y monitores multiparamétricos.",
             "Soporte en la evaluación preanestésica de los pacientes y definición del escore de riesgo (ASA).",
-            "Ayuda en la administración e control de protocolos de MPA e inducción anestésica.",
+            "Ayuda en la administración y control de protocolos de MPA e inducción anestésica.",
             "Monitoreo de parámetros vitales: FC, FR, SpO₂, temperatura y presión arterial.",
           ],
         },
@@ -372,7 +462,7 @@ export const translations = {
           title: "Clínica y Anestesia",
           skills: [
             "Clínica de pequeños y grandes animales",
-            "Evaluación preanestésica e escore ASA",
+            "Evaluación preanestésica y escore ASA",
             "Monitoreo multiparamétrico (FC, FR, SpO2, PAr)",
             "Protocolos de MPA e inducción anestésica",
           ],
@@ -380,7 +470,7 @@ export const translations = {
         {
           title: "Lab y Diagnóstico",
           skills: [
-            "Hematología (Wright/Giemsa e morfología)",
+            "Hematología (Wright/Giemsa y morfología)",
             "Bioquímica (analizadores automatizados)",
             "Urianálisis y Parasitología (sedimentos y heces)",
             "Preparación e interpretación de láminas",
@@ -392,7 +482,7 @@ export const translations = {
             "Inspección de carnes, leche, huevos y derivados",
             "SUASA, SISBI-POA y vigilancia sanitaria",
             "Normas MAPA, ANVISA y Codex Alimentarius",
-            "Bienestar animal y control populacional",
+            "Bienestar animal y control poblacional",
           ],
         },
         {
@@ -407,21 +497,66 @@ export const translations = {
       ],
     },
     education: {
-      title: "Formación Acadêmica",
+      title: "Formación Académica",
       graduation: "Graduación",
       course: "Licenciatura en Medicina Veterinaria",
       institution: "UVV - Vila Velha/ES",
-      period: "Jul/2022 – Jul/2027 (Previsión)",
-      studyAxes: "Ejes de Estudio",
-      axes: ["Clínica", "Inspección", "S. Pública", "Parasito"],
+      period: "Ene/2022 – Jul/2027 (Previsión)",
       certificationsTitle: "Certificaciones",
+      certificationCategories: {
+        congress: "Congresos",
+        courses: "Cursos y Capacitación"
+      },
       certifications: [
-        { title: "CONASIM 2025", subtitle: "Insp. Municipal (23h)", date: "2025" },
-        { title: "Contra a HIPE", subtitle: "Cardiología (8h)", date: "2024" },
-        { title: "The Horse Course", subtitle: "Univ. de Florida", date: "2023" },
-        { title: "Auxiliar Vet", subtitle: "Grandes Anim. (18h)", date: "2023" },
-        { title: "Manejo Pre-Abate", subtitle: "Agroindustrial (9h)", date: "2023" },
-        { title: "Farmacologia", subtitle: "Básica (51.5h)", date: "2023" },
+        { 
+          title: "CONASIM 2025", 
+          subtitle: "Insp. Municipal (23h)", 
+          date: "2025",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1mtdDKPn2H-bI9FEPigcrDdsEuy2JGJFs/view?usp=sharing"
+        },
+        { 
+          title: "Congreso de Cardiología - HIPE", 
+          subtitle: "Cardiología (8h)", 
+          date: "2024",
+          category: "congress",
+          link: "https://drive.google.com/file/d/1poP-hf877iEv5xlli4FwlZMaRHxqS9Ss/view?usp=sharing"
+        },
+        { 
+          title: "The Horse Course", 
+          subtitle: "Univ. de Florida", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1WWmf3bFhSX_YpGN2--mddkiufbxpcJkv/view?usp=sharing"
+        },
+        { 
+          title: "Auxiliar Veterinario", 
+          subtitle: "Grandes Animales (18h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/17QZpU0oQrWQnyI4_SS99NEIgBTysrGWA/view?usp=sharing"
+        },
+        { 
+          title: "Manejo Pre-Abate", 
+          subtitle: "Agroindustrial (9h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ef2AKHtjfmJNK4QGoYriNvIqsdE_67MC/view?usp=sharing"
+        },
+        { 
+          title: "Farmacología", 
+          subtitle: "Básica (51.5h)", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1RfOInvu59beaN6BGcB9f_YSjGFgn5kNR/view?usp=sharing"
+        },
+        { 
+          title: "Paquete Office", 
+          subtitle: "Productividad", 
+          date: "2023",
+          category: "courses",
+          link: "https://drive.google.com/file/d/1ZAKNcbLe5pKQ_rqNuzoohaX5OYCcW94l/view?usp=sharing"
+        },
       ],
       languagesTitle: "Idiomas",
       languages: [
@@ -429,7 +564,7 @@ export const translations = {
         { language: "Inglés", level: "Intermedio", progress: 65 },
         { language: "Español", level: "Intermedio", progress: 55 },
       ],
-      languageNote: "*Enfoque en lectura técnica de artículos científicos e cursos internacionales.",
+      languageNote: "*Enfoque en lectura técnica de artículos científicos y cursos internacionales.",
     },
     contact: {
       title: "Ponerse en Contacto",
@@ -442,7 +577,7 @@ export const translations = {
         subjectLabel: "Asunto",
         subjectPlaceholder: "¿Cómo puedo ayudar?",
         messageLabel: "Mensaje",
-        messagePlaceholder: "Descreva brevemente su solicitud...",
+        messagePlaceholder: "Describa brevemente su solicitud...",
         submit: "Enviar Mensaje por WhatsApp",
         footer: "Atención rápida y personalizada por WhatsApp.",
       },
