@@ -23,11 +23,11 @@ export function EducationSection() {
             {/* Graduação */}
             <Card className="border-border shadow-md hover:border-primary/50 transition-all bg-card flex-1">
               <CardHeader className="p-6">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                    <GraduationCap className="h-6 w-6" />
+                <div className="flex flex-col items-center justify-center gap-3 mb-6 w-full text-center">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
+                    <GraduationCap className="h-7 w-7" />
                   </div>
-                  <CardTitle className="text-lg">{t.education.graduation}</CardTitle>
+                  <CardTitle className="text-xl font-bold tracking-tight">{t.education.graduation}</CardTitle>
                 </div>
                 
                 <div className="space-y-4">
@@ -52,11 +52,11 @@ export function EducationSection() {
             {/* Idiomas */}
             <Card className="border-border shadow-md hover:border-primary/50 transition-all bg-card">
               <CardHeader className="p-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                    <Globe className="h-6 w-6" />
+                <div className="flex flex-col items-center justify-center gap-3 mb-4 w-full text-center">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
+                    <Globe className="h-7 w-7" />
                   </div>
-                  <CardTitle className="text-lg">{t.education.languagesTitle}</CardTitle>
+                  <CardTitle className="text-xl font-bold tracking-tight">{t.education.languagesTitle}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="p-6 pt-0">
@@ -88,11 +88,11 @@ export function EducationSection() {
           {/* Coluna da Direita: Certificações */}
           <Card className="border-border shadow-md hover:border-primary/50 transition-all bg-card h-full">
             <CardHeader className="p-6">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <Award className="h-6 w-6" />
+              <div className="flex flex-col items-center justify-center gap-3 mb-4 w-full text-center">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
+                  <Award className="h-7 w-7" />
                 </div>
-                <CardTitle className="text-lg">{t.education.certificationsTitle}</CardTitle>
+                <CardTitle className="text-xl font-bold tracking-tight">{t.education.certificationsTitle}</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="p-6 pt-0">
